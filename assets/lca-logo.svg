@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 89" width="250" height="89" role="img" aria-label="LCA Savills">
+  <rect width="89" height="89" fill="#ffdf00"/>
+  <text x="44.5" y="50" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#252839">LCA</text>
+  <rect x="26" y="60" width="37" height="4" fill="#252839"/>
+  <text x="103" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#252839">Savills</text>
+  <text x="104" y="72" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3.4" fill="#78828b">SUPPLY CHAIN</text>
+</svg>

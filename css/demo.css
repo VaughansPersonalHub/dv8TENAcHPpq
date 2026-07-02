@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Demo glue for the LCA Savills demo site.
+   All component styling comes from savills-core.css (Savills Core CSS
+   v1.44.6, unmodified). The few rules below only cover things the Savills
+   platform normally supplies through page templates, imagery or JS.
+   ========================================================================== */
+
+/* Hero banners: stretch the placeholder artwork to cover the banner area */
+.demo-hero .sv-image-treatment {
+    height: 100%;
+}
+
+.demo-hero .sv-image-treatment img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+    .demo-hero.sv-page-banner {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+}
+
+/* Centre the intro rule line on centred hero banners */
+.sv-page-banner.sv--center .sv-page-banner__intro:before {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Vertical rhythm between page sections */
+.demo-section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .demo-section {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+/* Dark closing call-to-action band */
+.demo-cta {
+    text-align: center;
+}
+
+.demo-cta .sv-cta-promo__title {
+    margin-bottom: .75rem;
+}
+
+.demo-cta-sub {
+    color: #c9c9c9;
+    font-family: DomineWebRegular, Georgia, "Palatino Linotype", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto 2rem;
+    max-width: 40rem;
+}
+
+/* Case-study headline stat */
+.demo-stat {
+    font-family: DomineWebBold, Georgia, "Palatino Linotype", serif;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    color: #cd171e;
+    margin: 0 0 .75rem;
+}
+
+/* Small spacing helpers */
+.demo-mt-1 { margin-top: 1rem; }
+.demo-mt-2 { margin-top: 2rem; }
+
+/* Standalone imagery in two-column feature rows */
+.demo-figure {
+    margin-bottom: 1.5rem;
+}
+
+.demo-figure img {
+    width: 100%;
+}
