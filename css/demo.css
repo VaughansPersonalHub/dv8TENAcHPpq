@@ -82,3 +82,84 @@
 .demo-figure img {
     width: 100%;
 }
+
+/* ==========================================================================
+   Stock photography (added for the photo pass). Photos live in /assets/img/
+   named by slot code (h1.jpg, sn1.jpg, ...). See the placement handoff.
+   ========================================================================== */
+
+/* Hero photos: full-bleed backdrop behind the white headline. Swap the
+   Savills type overlay for the handoff navy gradient so text stays legible. */
+.demo-hero .sv-image-treatment:before {
+    background-image: linear-gradient(90deg, rgba(15, 38, 71, .82), rgba(15, 38, 71, .15));
+    opacity: 1;
+}
+
+/* Content images beside copy: consistent cover crop, slightly desaturated
+   for a calm, natural-light look across mixed sources. */
+.demo-figure img,
+.demo-band-media img,
+.demo-thumb img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: saturate(.9);
+}
+
+.demo-figure--32 img { aspect-ratio: 3 / 2; height: auto; }
+.demo-figure--43 img { aspect-ratio: 4 / 3; height: auto; }
+
+/* Full-width photo used to break up a padded band (e.g. testimonials). */
+.demo-band-media {
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.demo-band-media img {
+    width: 100%;
+    height: 15rem;
+}
+
+/* Case-study card thumbnail (4:3) sitting above the card body. */
+.demo-thumb {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.demo-thumb img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+/* Country / where-we-work photo (3:2). */
+.demo-country-media {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.demo-country-media img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: saturate(.9);
+}
+
+/* Team headshot (1:1). */
+.demo-headshot {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: 13rem;
+    margin-bottom: 1rem;
+}
+
+.demo-headshot img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: saturate(.9);
+}
