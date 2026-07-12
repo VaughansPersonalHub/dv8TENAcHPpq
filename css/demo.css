@@ -147,6 +147,23 @@
     filter: saturate(.9);
 }
 
+/* Featured-content rows (first use in this demo): make the image half cover
+   its box, since the core sv-image-treatment cover rule is scoped elsewhere. */
+.demo-featured .sv-featured-content__image,
+.demo-featured .sv-featured-content__image .sv-image-treatment {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.demo-featured .sv-featured-content__image .sv-image-treatment img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: saturate(.9);
+}
+
 /* Team headshot (1:1). */
 .demo-headshot {
     display: block;
